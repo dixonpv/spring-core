@@ -5,7 +5,7 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="greeting" class="com.dixon.main.bean.GreetService">   
-        <property name="name" value="Good morning Dixon"></property>
+        <property name="name" value="Good morning Dixon!"></property>
     </bean>
 
 </beans>
