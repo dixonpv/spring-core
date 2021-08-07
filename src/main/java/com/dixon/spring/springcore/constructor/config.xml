@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="address"
+		class="com.dixon.spring.springcore.constructor.Address"
+		c:house="abc house" c:street="emery club" c:city="columbus">
+	</bean>
+
+	<bean name="employee" class="com.dixon.spring.springcore.constructor.Employee">
+
+		<constructor-arg>
+			<value>123</value>
+		</constructor-arg>
+		<constructor-arg>
+		<ref bean="address"></ref>
+			</constructor-arg>
+
+	</bean>
+</beans>
