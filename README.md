@@ -1,6 +1,6 @@
-# Spring-XML-Configuration-Example
+# Spring-Core examples
 
-Spring-XML-Configuration-Example
+Spring-Core examples
 
 
 
